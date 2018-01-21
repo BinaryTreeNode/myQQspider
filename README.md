@@ -1,37 +1,48 @@
-# QQ_zone
-QQ空间爬虫，一小时20万数据
+# myqqspider
+#this program is similar to QQ_Zone in github
+#it can help get the information u want from friends' qqzone
+#and write it into excel
+#
+#some differences:
+#1.we can define our list of usrs in wanteduserinfo.ini
+#2,we can see the time when our friends sent their messages to QQzone
+#3,we can see who had commented on on our friends' qqzone
+#4,u can get all friends' QQs and names by calling functions in getallfriends.py
 
-<h1>环境要求</h1>
+<h1>python environment</h1>
 <ul>
-<li>python3</li>
+<li>python3.6.3</li>
 <li>requests</li>
 <li>selenium</li>
 <li>configparser</li>
 <li>xlwt</li>
+<li>re</li>
+<li>time</li>
 
+ps:maybe you should affirm whether u have chromedriver in ur environment
+if u haven't got it, u should download from http://chromedriver.storage.googleapis.com/index.html first.
+</ul>
+
+<h1>operation environment</h1>
+<ul>a
+<li>ubuntu17.10</li>
+<li>chromium</li>
 
 </ul>
 
-<h1>安装环境</h1>
-  可使用pip或者easy_install安装<br>
-  安装格式为：<br>
-  pip install ...<br>
-  easy_install ...<br>
 
-<h1>运行项目</h2>
+
+<h1>project explaniation</h2>
 <ul>
-<li>打开userinfo.ini,填入你的qq_number,qq_password</li><br>
-<li>进入项目根目录下打开cmd 或终端 运行命令python qq_spider，一段时间后，数据存储在项目里frends,mood_detail文件夹里</li><br>
-<li>好友qq_number存储在frends文件夹中的json文件中</li><br>
+<li>open userinfo.ini,fill in ur qq_number,qq_password</li><br>
+<li>open wanteduserinfo.ini,fill in ur friends' qq_number,qq_password,seprating by comma</li><br>
+<li>enter the directory of project and type into "python qq_spider.py"，after a while, the data that u have got will be saved in the directory of friends,mood_detail</li><br>
   
-<li>说说mood存储在mood_detail中的excel文件夹中</li><br>
-<li>文件data_analys.py中可选择将数据存入mysql中</li>
+<li>The final results will be saved in excel directory</li><br>
 </ul>
 
-<h1>数据分析</h1>
-
 <ul>
-<li>可参考此篇博客</li><br>
+<li>reference</li><br>
   <a href="https://my.oschina.net/u/3264690/blog/1498751">抓取60000+QQ空间说说做一次数据分析
 </a>
 
